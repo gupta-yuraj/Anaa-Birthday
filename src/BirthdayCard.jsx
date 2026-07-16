@@ -6,12 +6,11 @@ export default function BirthdayCard() {
   const [isRevealed, setIsRevealed] = useState(false);
   const [activePhoto, setActivePhoto] = useState(null);
   const audioRef = useRef(null);
-
-  // --- REPLACE THESE WITH YOUR ACTUAL IMAGE PATHS OR URLS ---
-const photos = [
-    { id: 1, url: '/pic/11.png', caption: 'Memorable Moments' },
-    { id: 2, url: '/pic/2.png', caption: 'Good Times' }, // Adjust if this is inside a subfolder
-    { id: 3, url: '/pic/3.png', caption: 'Celebrations' }
+// Since they are all in the public folder, just use "/" followed by the filename
+  const photos = [
+    { id: 1, url: '/11.png', caption: 'Memorable Moments' },
+    { id: 2, url: '/2.png', caption: 'Good Times' },
+    { id: 3, url: '/3.png', caption: 'Celebrations' }
   ];
   useEffect(() => {
     if (hasEntered && audioRef.current) {
@@ -56,8 +55,7 @@ const photos = [
 
   return (
     <>
-      <audio ref={audioRef} src="/public/bir.mp3" loop />
-
+<audio ref={audioRef} src="/bir.mp3" loop />
       {/* 1. Immersive Pre-loader Transition Cover */}
       <AnimatePresence mode="wait">
         {!hasEntered ? (
