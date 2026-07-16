@@ -8,12 +8,11 @@ export default function BirthdayCard() {
   const audioRef = useRef(null);
 
   // --- REPLACE THESE WITH YOUR ACTUAL IMAGE PATHS OR URLS ---
-  const photos = [
-    { id: 1, url: '/public/pic/11.png', caption: 'Good Times🥰' },
-    { id: 2, url: '/public/pic/2.png', caption: 'Memorable Moments' },
-    { id: 3, url: '/public/pic/3.png', caption: 'Celebration' }
+const photos = [
+    { id: 1, url: '/pic/11.png', caption: 'Memorable Moments' },
+    { id: 2, url: '/2.png', caption: 'Good Times' }, // Adjust if this is inside a subfolder
+    { id: 3, url: '/3.png', caption: 'Celebrations' }
   ];
-
   useEffect(() => {
     if (hasEntered && audioRef.current) {
       audioRef.current.volume = 0.4;
