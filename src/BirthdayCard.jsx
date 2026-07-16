@@ -7,10 +7,10 @@ export default function BirthdayCard() {
   const [activePhoto, setActivePhoto] = useState(null);
   const audioRef = useRef(null);
 // Since they are all in the public folder, just use "/" followed by the filename
-  const photos = [
-    { id: 1, url: '/11.png', caption: 'Memorable Moments' },
-    { id: 2, url: '/2.png', caption: 'Good Times' },
-    { id: 3, url: '/3.png', caption: 'Celebrations' }
+const photos = [
+    { id: 1, url: '/11.PNG', caption: 'Memorable Moments' }, // Check if capital PNG
+    { id: 2, url: '/2.PNG', caption: 'Good Times' },
+    { id: 3, url: '/3.PNG', caption: 'Celebrations' }
   ];
   useEffect(() => {
     if (hasEntered && audioRef.current) {
