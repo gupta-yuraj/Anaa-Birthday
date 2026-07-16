@@ -9,8 +9,8 @@ export default function BirthdayCard() {
 
   // Pointing directly to your public/pic folder paths
   const photos = [
-    { id: 1, url: '/pic/11.png', caption: 'Memorable Moments' },
-    { id: 2, url: '/pic/2.png', caption: 'Good Times' },
+    { id: 1, url: '/pic/11.png', caption: 'Good Time' },
+    { id: 2, url: '/pic/2.png', caption: 'Memorable Moments' },
     { id: 3, url: '/pic/3.png', caption: 'Celebrations' }
   ];
 
